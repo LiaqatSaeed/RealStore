@@ -9,8 +9,8 @@ const TabsNavigator = ({pages}) => {
   return (
     <Tab.Navigator>
         {
-            map(pages,(item)=>(
-                <Tab.Screen  {...item} />
+            map(pages,(item,index)=>(
+                <Tab.Screen key={index} {...item} />
             ))
         }
     </Tab.Navigator>
