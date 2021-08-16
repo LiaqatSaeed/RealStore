@@ -4,7 +4,7 @@
 
 ## New React Navigation Implemented
 
-Navigation Container is implemented in the base of Application. Now -- the navigation prop is passed in to every screen component --
+Navigation Container is implemented in the base of Application. Now --the navigation prop is passed in to every screen component--
 
 ### Stacks, Tabs & Routing
 
