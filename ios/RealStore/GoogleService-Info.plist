@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>324941738301-rndqt0fp330ab0q7rm83o8fjkklc9j6k.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.324941738301-rndqt0fp330ab0q7rm83o8fjkklc9j6k</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCUFOXZQQfa_GZe4TWUrzBWaKaR0f3eywE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>324941738301</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.realstore.app</string>
+	<key>PROJECT_ID</key>
+	<string>weighty-opus-249318</string>
+	<key>STORAGE_BUCKET</key>
+	<string>weighty-opus-249318.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:324941738301:ios:1c6cdbc3402057bb6d1554</string>
+	<key>DATABASE_URL</key>
+	<string>https://weighty-opus-249318.firebaseio.com</string>
+</dict>
+</plist>
