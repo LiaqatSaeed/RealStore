@@ -4,7 +4,7 @@ import map from "lodash/map"
 
 const Tab = createBottomTabNavigator();
 
-const TabsNavigator = ({pages}) => {
+const TabsNavigator = ({pages}:any) => {
     console.log(pages)
   return (
     <Tab.Navigator>
