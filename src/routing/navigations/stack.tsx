@@ -5,10 +5,10 @@ import PublicScreens from '../routes/public';
 
 const Stack = createNativeStackNavigator();
 
-const StacksNavigator = ({pages}) => {
+const StacksNavigator = ({pages}:any) => {
   return (
     <Stack.Navigator>
-        {map(pages,(item,index)=><Stack.Screen key={index} {...item} />)}
+        {map(pages,(item :any,index :number)=><Stack.Screen key={index} {...item} />)}
     </Stack.Navigator>
   );
 };

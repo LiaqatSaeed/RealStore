@@ -16,12 +16,24 @@ Inside your stack folder you can created your stacks a generic function is used 
 
 ## Migration to TypScript
 
-### Basic Migration
+### Basic Migration Typscript (Just Make it Work)
 
 - converted js files to ts
 - converted jsx files to tsx
+- Allow implicit anys
 
 ```bash
 noImplicitAny: false
 ```
 for basic configuration for typescript
+
+### Be Explicit
+
+- No implicit anys 
+
+```bash
+noImplicitAny: true
+```
+
+- Common Types
+- 3rd Party Library Types (Like Lodash / React/ React Native) @types/*
