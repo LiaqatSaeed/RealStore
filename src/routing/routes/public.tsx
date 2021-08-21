@@ -3,8 +3,12 @@ import SettingsScreen from '../../views/settings';
 import HomeDetailsScreen from '../../views/homeDetails';
 import SettingsDetailsScreen from '../../views/settingDetails';
 import {HOME, SETTINGS} from '../constants';
+import RoutingConfig from '../../interfaces/routingConfig.interface';
 
-const PublicScreens = [
+
+
+
+const PublicScreens: RoutingConfig[] = [
   {
     name: `${HOME}`,
     component: HomeScreen,
