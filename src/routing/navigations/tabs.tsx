@@ -1,11 +1,17 @@
 import  React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import map from "lodash/map"
+import RoutingConfig from "../../interfaces/routingConfig.interface"
+
+
+interface TabsNavigatorProps {
+  pages: RoutingConfig[];
+}
 
 const Tab = createBottomTabNavigator();
 
-const TabsNavigator = ({pages}:any) => {
-    console.log(pages)
+const TabsNavigator:React.FC<TabsNavigatorProps> = ({pages}:TabsNavigatorProps) => {
+   
   return (
     <Tab.Navigator>
         {
