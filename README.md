@@ -12,3 +12,16 @@ Stacks and Tabs functions are created. Which you can you to created your Tabs or
 > routing / routes / Public | Private routes
 
 Inside your stack folder you can created your stacks a generic function is used for creating stack. You have to give a common keys inside your routes for * Public | Private * routes. Based on Keys Stacks will be created
+
+
+## Migration to TypScript
+
+### Basic Migration
+
+- converted js files to ts
+- converted jsx files to tsx
+
+```bash
+noImplicitAny: false
+```
+for basic configuration for typescript
