@@ -11,7 +11,7 @@ interface TabsNavigatorProps {
 const Tab = createBottomTabNavigator();
 
 const TabsNavigator:React.FC<TabsNavigatorProps> = ({pages}:TabsNavigatorProps) => {
-    console.log(pages)
+   
   return (
     <Tab.Navigator>
         {

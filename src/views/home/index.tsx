@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View ,Button} from 'react-native';
 import { HOME } from '../../routing/constants';
 
-const HomeScreen = ({navigation}) => {
+const HomeScreen = ({navigation}:any) => {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <Text>Home!</Text>
