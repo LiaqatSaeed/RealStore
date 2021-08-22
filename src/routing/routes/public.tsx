@@ -5,9 +5,6 @@ import SettingsDetailsScreen from '../../views/settingDetails';
 import {HOME, SETTINGS} from '../constants';
 import RoutingConfig from '../../interfaces/routingConfig.interface';
 
-
-
-
 const PublicScreens: RoutingConfig[] = [
   {
     name: `${HOME}`,
