@@ -8,11 +8,11 @@ Navigation Container is implemented in the base of Application. Now the navigati
 
 ### Stacks, Tabs & Routing
 
-Stacks and Tabs functions are created. Which you can you to created your Tabs or Stacks Screens. All the routes are defined inside 
+Stacks and Tabs functions are created. Which you can you to created your Tabs or Stacks Screens. All the routes are defined inside
+
 > routing / routes / Public | Private routes
 
-Inside your stack folder you can created your stacks a generic function is used for creating stack. You have to give a common keys inside your routes for * Public | Private * routes. Based on Keys Stacks will be created
-
+Inside your stack folder you can created your stacks a generic function is used for creating stack. You have to give a common keys inside your routes for _ Public | Private _ routes. Based on Keys Stacks will be created
 
 ## Migration to TypScript
 
@@ -25,25 +25,40 @@ Inside your stack folder you can created your stacks a generic function is used 
 ```bash
 noImplicitAny: false
 ```
+
 for basic configuration for typescript
 
 ### Be Explicit
 
-- No implicit anys 
+- No implicit anys
 
 ```bash
 noImplicitAny: true
 ```
 
 - Common Types
-- 3rd Party Library Types (Like Lodash / React/ React Native) @types/*
-
+- 3rd Party Library Types (Like Lodash / React/ React Native) @types/\*
 
 ## Firebase Authentication with Social Login
 
+- Firbase Configuration iOS
+  [] Download GoogleServices-info.plist from firebase and place it in your App Xcode project.s
+
 ### Base Auth HOC
+
 - `Firebase auth` as a common property injected to a wrapped component
 - common API onLogin method injected to a wrapped component
 
 ### Social Logins
+
 - Login With `Facebook`
+
+1. External Configurtions
+   [] Create app on Facebook Developer console
+   [] Enable Facebook login on Firebase
+   [] Add App ID and Secret Keys on Facebook enabling on Firebase
+
+2. Internal Configurations
+   - For iOS
+     [] Add Facebook App Id inside Info.plist
+     [] Add URL scheme inside info.plist
