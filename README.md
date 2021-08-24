@@ -54,11 +54,11 @@ noImplicitAny: true
 - Login With `Facebook`
 
 1. External Configurtions
-   [x] Create app on Facebook Developer console
-   [x] Enable Facebook login on Firebase
-   [x] Add App ID and Secret Keys on Facebook enabling on Firebase
+   - [x] Create app on Facebook Developer console
+   - [x] Enable Facebook login on Firebase
+   - [x] Add App ID and Secret Keys on Facebook enabling on Firebase
 
 2. Internal Configurations
    - For iOS
-     [x] Add Facebook App Id inside Info.plist
-     [x] Add URL scheme inside info.plist
+    - [x] Add Facebook App Id inside Info.plist
+    - [x] Add URL scheme inside info.plist
