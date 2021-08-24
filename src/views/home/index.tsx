@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text, View ,Button} from 'react-native';
 import { HOME } from '../../routing/constants';
+import FacebookLogin from '../../integration/auth/facebook.login';
 
 const HomeScreen = ({navigation}:any) => {
   return (
@@ -10,6 +11,7 @@ const HomeScreen = ({navigation}:any) => {
         title="Go to Details"
         onPress={() => navigation.navigate(`${HOME} Details`)}
       />
+      <FacebookLogin title="Join with Facebook" onSubmit={(values:any)=> console.log(values)}/>
     </View>
   );
 }
