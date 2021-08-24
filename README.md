@@ -37,13 +37,3 @@ noImplicitAny: true
 
 - Common Types
 - 3rd Party Library Types (Like Lodash / React/ React Native) @types/*
-
-
-## Firebase Authentication with Social Login
-
-### Base Auth HOC
-- `Firebase auth` as a common property injected to a wrapped component
-- common API onLogin method injected to a wrapped component
-
-### Social Logins
-- Login With `Facebook`

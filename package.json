@@ -10,15 +10,12 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@react-native-firebase/app": "^12.7.2",
-    "@react-native-firebase/auth": "^12.7.2",
+    "@react-native-firebase/app": "^12.7.0",
     "@react-navigation/bottom-tabs": "^6.0.2",
     "@react-navigation/native": "^6.0.2",
     "@react-navigation/native-stack": "^6.0.3",
-    "@types/react-native-fbsdk": "^3.0.1",
     "react": "17.0.1",
     "react-native": "0.64.2",
-    "react-native-fbsdk": "^3.0.0",
     "react-native-safe-area-context": "^3.3.0",
     "react-native-screens": "^3.5.0"
   },

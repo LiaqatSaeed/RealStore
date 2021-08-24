@@ -14,7 +14,6 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		3D8DE1DF0F284CE657B477AB /* libPods-RealStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 097DC9C3D06B19AE979B3D30 /* libPods-RealStore.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		BF31BFC326D5003900BAF80D /* libswiftWebKit.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BF31BFC226D5003900BAF80D /* libswiftWebKit.tbd */; };
 		BFDC34CE26CE668300DF9BDE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFDC34CD26CE668300DF9BDE /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -43,7 +42,6 @@
 		56A6837084D197AD4F302D3C /* libPods-RealStore-RealStoreTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RealStore-RealStoreTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		699E93BDEB6798BBEBA5C0B6 /* Pods-RealStore-RealStoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealStore-RealStoreTests.release.xcconfig"; path = "Target Support Files/Pods-RealStore-RealStoreTests/Pods-RealStore-RealStoreTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RealStore/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BF31BFC226D5003900BAF80D /* libswiftWebKit.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftWebKit.tbd; path = usr/lib/swift/libswiftWebKit.tbd; sourceTree = SDKROOT; };
 		BFDC34CD26CE668300DF9BDE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "RealStore/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D918205C5D5E7967D734739A /* Pods-RealStore-RealStoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealStore-RealStoreTests.debug.xcconfig"; path = "Target Support Files/Pods-RealStore-RealStoreTests/Pods-RealStore-RealStoreTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -63,7 +61,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF31BFC326D5003900BAF80D /* libswiftWebKit.tbd in Frameworks */,
 				3D8DE1DF0F284CE657B477AB /* libPods-RealStore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,7 +102,6 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BF31BFC226D5003900BAF80D /* libswiftWebKit.tbd */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				097DC9C3D06B19AE979B3D30 /* libPods-RealStore.a */,
 				56A6837084D197AD4F302D3C /* libPods-RealStore-RealStoreTests.a */,
@@ -506,23 +502,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M5YC6W57SC;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = RealStore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SDKROOT)/usr/lib/swift",
-				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.trealtstore.app;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = RealStore;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -537,22 +528,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M5YC6W57SC;
 				INFOPLIST_FILE = RealStore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SDKROOT)/usr/lib/swift",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.trealtstore.app;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = RealStore;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
