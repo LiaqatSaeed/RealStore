@@ -1,7 +1,6 @@
 import React from 'react';
-import {Button} from 'react-native';
-import auth from '@react-native-firebase/auth';
-import {LoginManager, AccessToken} from 'react-native-fbsdk';
+import { Button } from 'react-native';
+import { AccessToken, LoginManager } from 'react-native-fbsdk';
 import AuthButton from '../../interfaces/auth.interface';
 import { Auth } from './auth.hoc';
 
