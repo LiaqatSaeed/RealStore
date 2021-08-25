@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>324941738301-rndqt0fp330ab0q7rm83o8fjkklc9j6k.apps.googleusercontent.com</string>
+	<string>1055941285487-slrq5ndvj4pi89erojhk1v85f915offs.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.324941738301-rndqt0fp330ab0q7rm83o8fjkklc9j6k</string>
+	<string>com.googleusercontent.apps.1055941285487-slrq5ndvj4pi89erojhk1v85f915offs</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCUFOXZQQfa_GZe4TWUrzBWaKaR0f3eywE</string>
+	<string>AIzaSyDtPEXUcz15vai9fCDqS9HcUTXdo9W9RCQ</string>
 	<key>GCM_SENDER_ID</key>
-	<string>324941738301</string>
+	<string>1055941285487</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.realstore.app</string>
+	<string>online.realstore.app</string>
 	<key>PROJECT_ID</key>
-	<string>weighty-opus-249318</string>
+	<string>realstore-f542a</string>
 	<key>STORAGE_BUCKET</key>
-	<string>weighty-opus-249318.appspot.com</string>
+	<string>realstore-f542a.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:324941738301:ios:1c6cdbc3402057bb6d1554</string>
-	<key>DATABASE_URL</key>
-	<string>https://weighty-opus-249318.firebaseio.com</string>
+	<string>1:1055941285487:ios:80e94fc8a33677850ddf9a</string>
 </dict>
 </plist>

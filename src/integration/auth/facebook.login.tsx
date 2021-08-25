@@ -4,13 +4,15 @@ import { AccessToken, LoginManager } from 'react-native-fbsdk';
 import AuthButton from '../../interfaces/auth.interface';
 import { Auth } from './auth.hoc';
 
-const FacebookSignIn: React.FC<AuthButton> = ({
+const FacebookLogin: React.FC<AuthButton> = ({
   title = 'Facebook Sign-In',
   onSubmit,
   auth
 }: AuthButton) => {
   const onFacebookButtonPress = async () => {
-    // Attempt login with permissions
+
+    try {
+          // Attempt login with permissions
     const result = await LoginManager.logInWithPermissions([
       'public_profile',
       'email',
@@ -33,7 +35,10 @@ const FacebookSignIn: React.FC<AuthButton> = ({
     );
 
     // Sign-in the user with the credential
-    return auth().signInWithCredential(facebookCredential);
+    return await auth().signInWithCredential(facebookCredential);
+    } catch (error) {
+   
+    }
   };
 
   return (
@@ -44,4 +49,4 @@ const FacebookSignIn: React.FC<AuthButton> = ({
   );
 };
 
-export default Auth(FacebookSignIn)
+export default Auth(FacebookLogin)

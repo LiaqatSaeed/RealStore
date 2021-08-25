@@ -62,3 +62,19 @@ noImplicitAny: true
    - For iOS
     - [x] Add Facebook App Id inside Info.plist
     - [x] Add URL scheme inside info.plist
+
+- Login With `Google`
+
+1. External Configurtions
+   - [x] Enable Google login on Firebase
+   - [x] Get Client Id from https://developers.google.com/identity/sign-in/ios/start-integrating#add_a_url_scheme_to_your_project
+
+2. Internal Configurations
+   - For iOS
+    - [x] Add URL scheme inside info.plist
+    - [x] Add External url inside
+
+
+### FireStore
+
+1. yarn add @react-native-firebase/firestore
