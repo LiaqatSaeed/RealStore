@@ -7,10 +7,11 @@ import {Button} from 'react-native';
 import AuthButton from '../../interfaces/auth.interface';
 import {Auth} from './auth.hoc';
 
-const {REACT_GOOGLE_WEB_CLIENT_ID} = process.env;
+import {GOOGLE_WEB_CLIENT_ID} from "@env";
+
 
 // GoogleSignin.configure({
-//   webClientId: REACT_GOOGLE_WEB_CLIENT_ID,
+//   webClientId: GOOGLE_WEB_CLIENT_ID,
 // });
 
 const GoogleLogin: React.FC<AuthButton> = ({

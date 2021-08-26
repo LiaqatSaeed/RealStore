@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import auth,{ FirebaseAuthTypes } from "@react-native-firebase/auth"
 
 // First we need to add a type to let us extend the incoming component.
-type BaseProps = {
+interface BaseProps  {
   user: object;
 };
 
