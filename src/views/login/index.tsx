@@ -1,47 +1,66 @@
-import React, { useEffect } from 'react';
-import { Text, View, Button } from 'react-native';
+import React from 'react';
+import { Text, View } from 'react-native';
+import { AuthConsumer } from '../../boot/authProvider';
+import colors from '../../common/color';
+import { Button, Label } from '../../components';
 import { REGISTER } from '../../routing/constants';
-import FacebookLogin from '../../integration/auth/facebook.login';
-import { TEST } from '@env';
-import { AuthConsumer } from "../../boot/authProvider"
-import LoginForm from "./components/form.index";
+import LoginForm from './components/form.index';
 
 // import GoogleLogin from '../../integration/auth/google.login';
 
 interface LoginScreenProps {
-    navigation: any;
-    onSubmit: Function;
-    auth?: any;
+  navigation: any;
+  onSubmit: Function;
+  auth?: any;
 }
 
-const LoginScreen = ({ navigation }: LoginScreenProps) => {
-    return (
+const LoginScreen = ({navigation}: LoginScreenProps) => {
+  return (
+    <AuthConsumer>
+      {({theme, styles}) => (
+        <View style={{flex: 1, padding: 10, backgroundColor: colors.bg_F8F}}>
+          <View
+            style={{
+              flex: 1,
+              paddingLeft: 15,
+              justifyContent: 'flex-end',
+              padding: 10,
+            }}>
+            <Text style={styles.h1}>Login to your account!</Text>
+            <Label>
+              Good to see you again, enter your details below to continue
+              ordering.
+            </Label>
+          </View>
 
-        <AuthConsumer>
-            {({ theme, styles }) => (
-                <View style={{ flex: 1, padding: 10, backgroundColor: "#E4E6E7" }}>
-                    <Text style={styles.h1}>Login to your account!</Text>
-                    <Text>
-                        Good to see you again, enter your details below to continue ordering.
-                    </Text>
+          <LoginForm />
+          <View style={{flex: 1, padding: 10, justifyContent: 'center'}}>
+         
 
-                    <LoginForm/>
+            <View style={{alignSelf: 'center', flexDirection: 'row'}}>
+              <Label
+                css={`
+                  font-size: 14px;
+                `}>
+                Dont have an account?
+              </Label>
+              <Button onPress={() => navigation.navigate(REGISTER)}>
+                <Label
+                  active
+                  css={`
+                    font-size: 14px;
+                    font-weight: bold;
+                  `}>
+                  Sign-in with Google
+                </Label>
+              </Button>
+            </View>
+          </View>
 
-                    <FacebookLogin
-                        title="Join with Facebook"
-                        onSubmit={(values: any) => console.log(values)}
-                    />
-
-                    <View >
-                        <Text>Dont have an account?</Text>
-                        <Button title="Sign Up" onPress={() => navigation.navigate(REGISTER)} />
-                    </View>
-                    {/* <GoogleLogin title="Join with Google" onSubmit={(values:any)=> console.log(values)}/> */}
-                </View>
-            )
-            }
-        </AuthConsumer>
-
-    );
+          {/* <GoogleLogin title="Join with Google" onSubmit={(values:any)=> console.log(values)}/> */}
+        </View>
+      )}
+    </AuthConsumer>
+  );
 };
 export default LoginScreen;
