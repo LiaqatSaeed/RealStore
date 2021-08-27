@@ -1,29 +1,33 @@
-import HomeScreen from '../../views/home';
-import SettingsScreen from '../../views/settings';
-import HomeDetailsScreen from '../../views/homeDetails';
-import SettingsDetailsScreen from '../../views/settingDetails';
-import {HOME, SETTINGS} from '../constants';
+import LoginScreen from '../../views/login';
+import RegisterScreen from '../../views/register';
+import ResetPasswordScreen from '../../views/resetPassword';
+import ForgetPasswordScreen from '../../views/forgetPassword';
+import { LOGIN, REGISTER, FORGET_PASSWORD, RESET_PASSWORD } from '../constants';
 
 const PublicScreens = [
   {
-    name: `${HOME}`,
-    component: HomeScreen,
-    key: HOME,
+    name: `${LOGIN}`,
+    component: LoginScreen,
+    key: LOGIN,
+    options: {headerShown: false},
   },
   {
-    name: `${HOME} Details`,
-    component: HomeDetailsScreen,
-    key: HOME,
+    name: REGISTER,
+    component: RegisterScreen,
+    key: REGISTER,
+    options: {headerShown: false},
   },
   {
-    name: SETTINGS,
-    component: SettingsScreen,
-    key: SETTINGS,
+    name: FORGET_PASSWORD,
+    component: ForgetPasswordScreen,
+    key: FORGET_PASSWORD,
+    options: {headerShown: false},
   },
   {
-    name: `${SETTINGS} Details`,
-    component: SettingsDetailsScreen,
-    key: SETTINGS,
+    name: RESET_PASSWORD,
+    component: ResetPasswordScreen,
+    key: RESET_PASSWORD,
+    options: {headerShown: false},
   },
 ];
 

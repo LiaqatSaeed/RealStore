@@ -1,15 +1,18 @@
 const HOME = "Home";
 const SETTINGS = "Settings";
-const SIGN_IN = "SignIn";
-const SIGN_UP = "SignUp";
+const LOGIN = "Login";
+const REGISTER = "Register";
 const FORGET_PASSWORD = "ForgetPassword";
+const RESET_PASSWORD = "ResetPassword";
+
 
 
 
 export {
     HOME,
     SETTINGS,
-    SIGN_IN,
-    SIGN_UP,
-    FORGET_PASSWORD
+    LOGIN,
+    REGISTER,
+    FORGET_PASSWORD,
+    RESET_PASSWORD
 }

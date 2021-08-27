@@ -62,3 +62,35 @@ noImplicitAny: true
    - For iOS
     - [x] Add Facebook App Id inside Info.plist
     - [x] Add URL scheme inside info.plist
+
+- Login With `Google`
+
+1. External Configurtions
+   - [x] Enable Google login on Firebase
+   - [x] Get Client Id from https://developers.google.com/identity/sign-in/ios/start-integrating#add_a_url_scheme_to_your_project
+
+2. Internal Configurations
+   - For iOS
+    - [x] Add URL scheme inside info.plist
+    - [x] Add External url inside
+
+
+### FireStore
+
+1. yarn add @react-native-firebase/firestore
+
+# How to add custom Font Family 
+
+1. iOS
+ - [x] Create `Assets/Fonts` folder and add all your fonts.
+ - [x] Create a file named `react-native.config.js` in root 
+ - add this code inside this file
+         ```bash
+         module.exports = {
+         project: {
+             ios: {},
+             android: {},
+         },
+         assets: ['./assets/fonts']
+         }```
+- [x] Run `react-native` link command in the root project path.
