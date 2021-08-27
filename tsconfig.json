@@ -18,5 +18,5 @@
         "node_modules",
         "bable.config.js",
         "metro.config.js"
-    ]
+    ],
 }

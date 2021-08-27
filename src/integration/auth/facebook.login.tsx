@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from 'react-native';
 import { AccessToken, LoginManager } from 'react-native-fbsdk';
 import AuthButton from '../../interfaces/auth.interface';
-import { Auth } from './auth.hoc';
+import { withAuth } from './auth.hoc';
 
 const FacebookLogin: React.FC<AuthButton> = ({
   title = 'Facebook Sign-In',
@@ -49,4 +49,4 @@ const FacebookLogin: React.FC<AuthButton> = ({
   );
 };
 
-export default Auth(FacebookLogin)
+export default withAuth(FacebookLogin)

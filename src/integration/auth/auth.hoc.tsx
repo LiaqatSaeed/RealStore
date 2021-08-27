@@ -6,7 +6,7 @@ interface BaseProps  {
   user: object;
 };
 
-export function Auth<P>(WrappedComponent: React.FC<P & BaseProps>) {
+export function withAuth<P>(WrappedComponent: React.FC<P & BaseProps>) {
 
   const AuthBase = (props: P) => {
     const [user, setUser] = useState({});
