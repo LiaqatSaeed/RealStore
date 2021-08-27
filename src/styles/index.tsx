@@ -4,13 +4,14 @@ import {
 
 
 const styles = StyleSheet.create({
-    sectionContainer: {
-      marginTop: 32,
-      paddingHorizontal: 24,
+    container: {
+      padding:10
     },
-    sectionTitle: {
-      fontSize: 24,
-      fontWeight: '600',
+    h1:{
+      fontSize:20,
+      fontWeight:"bold",
+      fontFamily:"DM Sans",
+      marginBottom:10
     },
     sectionDescription: {
       marginTop: 8,

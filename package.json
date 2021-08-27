@@ -17,12 +17,14 @@
     "@react-navigation/native": "^6.0.2",
     "@react-navigation/native-stack": "^6.0.3",
     "add": "^2.0.6",
+    "formik": "^2.2.9",
     "react": "17.0.1",
     "react-native": "0.64.2",
     "react-native-fbsdk": "^3.0.0",
     "react-native-safe-area-context": "^3.3.0",
     "react-native-screens": "^3.5.0",
-    "yarn": "^1.22.11"
+    "yarn": "^1.22.11",
+    "yup": "^0.32.9"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",

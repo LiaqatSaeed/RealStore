@@ -78,3 +78,19 @@ noImplicitAny: true
 ### FireStore
 
 1. yarn add @react-native-firebase/firestore
+
+# How to add custom Font Family 
+
+1. iOS
+ - [x] Create `Assets/Fonts` folder and add all your fonts.
+ - [x] Create a file named `react-native.config.js` in root 
+ - add this code inside this file
+         ```bash
+         module.exports = {
+         project: {
+             ios: {},
+             android: {},
+         },
+         assets: ['./assets/fonts']
+         }```
+- [x] Run `react-native` link command in the root project path.
