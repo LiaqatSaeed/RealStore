@@ -94,3 +94,7 @@ noImplicitAny: true
          assets: ['./assets/fonts']
          }```
 - [x] Run `react-native` link command in the root project path.
+
+# Formik 
+- [x] Formik HOC created 
+- [x] Configure Yup validation
