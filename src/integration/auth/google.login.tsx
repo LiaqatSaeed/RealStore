@@ -5,7 +5,7 @@ import {Button} from 'react-native';
 //   statusCodes,
 // } from '@react-native-google-signin/google-signin';
 import AuthButton from '../../interfaces/auth.interface';
-import {Auth} from './auth.hoc';
+import {withAuth} from './auth.hoc';
 
 import {GOOGLE_WEB_CLIENT_ID} from "@env";
 
@@ -50,4 +50,4 @@ const GoogleLogin: React.FC<AuthButton> = ({
   );
 };
 
-export default Auth(GoogleLogin);
+export default withAuth(GoogleLogin);

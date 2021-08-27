@@ -15,7 +15,7 @@ interface ResetPasswordScreenProps {
 const ResetPasswordScreen = ({ navigation }: ResetPasswordScreenProps) => {
     return (
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <Text>Register!</Text>
+            <Text>Reset!</Text>
             <FacebookLogin
                 title="Join with Facebook"
                 onSubmit={(values: any) => console.log(values)}
