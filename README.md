@@ -63,6 +63,8 @@ noImplicitAny: true
     - [x] Add Facebook App Id inside Info.plist
     - [x] Add URL scheme inside info.plist
 
+![Facebook Login Demo Video] https://www.loom.com/share/b1476dfaaf1f4b43a441db162f970feb
+
 - Login With `Google`
 
 1. External Configurtions
