@@ -1,8 +1,11 @@
 import React from 'react';
-import { Button } from 'react-native';
 import { AccessToken, LoginManager } from 'react-native-fbsdk';
 import AuthButton from '../../interfaces/auth.interface';
 import { withAuth } from './auth.hoc';
+import { GroupButton } from '../../components';
+import { AuthConsumer } from '../../boot/authProvider';
+
+const url = require("../../assets/images/facebook.png")
 
 const FacebookLogin: React.FC<AuthButton> = ({
   title = 'Facebook Sign-In',
@@ -12,40 +15,46 @@ const FacebookLogin: React.FC<AuthButton> = ({
   const onFacebookButtonPress = async () => {
 
     try {
-          // Attempt login with permissions
-    const result = await LoginManager.logInWithPermissions([
-      'public_profile',
-      'email',
-    ]);
+      // Attempt login with permissions
+      const result = await LoginManager.logInWithPermissions([
+        'public_profile',
+        'email',
+      ]);
 
-    if (result.isCancelled) {
-      throw 'User cancelled the login process';
-    }
+      if (result.isCancelled) {
+        throw 'User cancelled the login process';
+      }
 
-    // Once signed in, get the users AccesToken
-    const data = await AccessToken.getCurrentAccessToken();
+      // Once signed in, get the users AccesToken
+      const data = await AccessToken.getCurrentAccessToken();
 
-    if (!data) {
-      throw 'Something went wrong obtaining access token';
-    }
+      if (!data) {
+        throw 'Something went wrong obtaining access token';
+      }
 
-    // Create a Firebase credential with the AccessToken
-    const facebookCredential = auth["FacebookAuthProvider"].credential(
-      data.accessToken,
-    );
+      // Create a Firebase credential with the AccessToken
+      const facebookCredential = auth["FacebookAuthProvider"].credential(
+        data.accessToken,
+      );
 
-    // Sign-in the user with the credential
-    return await auth().signInWithCredential(facebookCredential);
+      // Sign-in the user with the credential
+      return await auth().signInWithCredential(facebookCredential);
     } catch (error) {
-   
+
     }
   };
 
   return (
-    <Button
-      title={title}
-      onPress={() => onFacebookButtonPress().then(values => onSubmit(values))}
-    />
+    <AuthConsumer>
+      {({ styles}) => (
+      <GroupButton
+        url={url}
+        label={title}
+        style={styles.boxShadow}
+        onPress={() => onFacebookButtonPress().then(values => onSubmit(values))}
+      />)}
+    </AuthConsumer>
+
   );
 };
 

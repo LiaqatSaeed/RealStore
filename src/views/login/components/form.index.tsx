@@ -6,9 +6,8 @@ import initialValues from './initial.values';
 
 const LoginForm = () => {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <LoginFormBody onSubmit={()=>{}} initialValues={initialValues}/>
-    
+    <View style={{ flex:6,justifyContent:"center" }}>
+      <LoginFormBody  onSubmit={()=>{}} initialValues={initialValues}/>
     </View>
   );
 }
