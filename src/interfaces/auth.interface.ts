@@ -1,7 +1,8 @@
 interface AuthButton {
     title: string,
     onSubmit:Function,
-    auth?:any
+    auth?:any;
+    style?:any
 }
 
 export default AuthButton;

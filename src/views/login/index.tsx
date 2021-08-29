@@ -17,11 +17,11 @@ interface LoginScreenProps {
 const LoginScreen = ({navigation}: LoginScreenProps) => {
   return (
     <AuthConsumer>
-      {({theme, styles}) => (
+      {({styles}) => (
         <View style={{flex: 1, padding: 10, backgroundColor: colors.bg_F8F}}>
           <View
             style={{
-              flex: 1,
+              flex: 2,
               paddingLeft: 15,
               justifyContent: 'flex-end',
               padding: 10,
@@ -51,7 +51,7 @@ const LoginScreen = ({navigation}: LoginScreenProps) => {
                     font-size: 14px;
                     font-weight: bold;
                   `}>
-                  Sign-in with Google
+                  {" "}Sign Up
                 </Label>
               </Button>
             </View>
