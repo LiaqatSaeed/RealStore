@@ -12,6 +12,8 @@ target 'RealStore' do
     :hermes_enabled => false
   )
 
+  pod 'RNI18n', :path => '../node_modules/react-native-i18n'
+
   target 'RealStoreTests' do
     inherit! :complete
     # Pods for testing

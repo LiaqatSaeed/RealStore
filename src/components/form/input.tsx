@@ -18,7 +18,7 @@ interface LabelProps {
 
 const StyledInput = styled(TextInput)`
     background-color:white;
-    height:35;
+    height:35px;
     padding:10px 20px;
     border-radius:10px;
     border:1px solid ${colors.gray_DFE};
