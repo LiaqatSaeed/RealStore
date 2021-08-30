@@ -100,3 +100,10 @@ noImplicitAny: true
 # Formik 
 - [x] Formik HOC created 
 - [x] Configure Yup validation
+
+
+# Localization 
+
+- [x] `yarn add react-native-i18n`
+- [x] `fr` & `en` locales enabled for `French` & `English` language
+- [x] Common implementation for fi keys also implemented

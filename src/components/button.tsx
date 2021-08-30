@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import {Label} from './index';
 import colors from '../common/color';
 
-const primary = `border-radius:20px; height:50px; background-color:${colors.primary}; color:${colors.white};`;
+const primary = `border-radius:10px; height:35px; background-color:${colors.primary}; color:${colors.white};`;
 
 interface ButtonProps {
   css?: string;
@@ -31,6 +31,7 @@ const GroupButtonWrapper = styled(TouchableOpacity)`
   align-items: center;
   flex-direction: row;
   padding: 10px;
+  height:35px;
   align-self: center;
   width: 200px;
   border-radius: 20px;

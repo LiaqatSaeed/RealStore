@@ -5,6 +5,7 @@ import colors from '../../common/color';
 import { Button, Label } from '../../components';
 import { REGISTER } from '../../routing/constants';
 import LoginForm from './components/form.index';
+import RNI18n,{tc} from "../../localization"
 
 // import GoogleLogin from '../../integration/auth/google.login';
 
@@ -26,10 +27,9 @@ const LoginScreen = ({navigation}: LoginScreenProps) => {
               justifyContent: 'flex-end',
               padding: 10,
             }}>
-            <Text style={styles.h1}>Login to your account!</Text>
+            <Text style={styles.h1}>{RNI18n.t("login.heading")}</Text>
             <Label>
-              Good to see you again, enter your details below to continue
-              ordering.
+              {RNI18n.t("login.description")}
             </Label>
           </View>
 
@@ -42,7 +42,7 @@ const LoginScreen = ({navigation}: LoginScreenProps) => {
                 css={`
                   font-size: 14px;
                 `}>
-                Dont have an account?
+                {tc("no_account")}
               </Label>
               <Button onPress={() => navigation.navigate(REGISTER)}>
                 <Label
@@ -51,7 +51,7 @@ const LoginScreen = ({navigation}: LoginScreenProps) => {
                     font-size: 14px;
                     font-weight: bold;
                   `}>
-                  {" "}Sign Up
+                  {" "}{tc("register")}
                 </Label>
               </Button>
             </View>

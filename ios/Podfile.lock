@@ -788,6 +788,8 @@ PODS:
     - Firebase/Firestore (= 8.6.0)
     - React-Core
     - RNFBApp
+  - RNI18n (2.0.15):
+    - React
   - RNScreens (3.5.0):
     - React-Core
     - React-RCTImage
@@ -849,6 +851,7 @@ DEPENDENCIES:
   - "RNFBApp (from `../node_modules/@react-native-firebase/app`)"
   - "RNFBAuth (from `../node_modules/@react-native-firebase/auth`)"
   - "RNFBFirestore (from `../node_modules/@react-native-firebase/firestore`)"
+  - RNI18n (from `../node_modules/react-native-i18n`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -950,6 +953,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/@react-native-firebase/auth"
   RNFBFirestore:
     :path: "../node_modules/@react-native-firebase/firestore"
+  RNI18n:
+    :path: "../node_modules/react-native-i18n"
   RNScreens:
     :path: "../node_modules/react-native-screens"
   Yoga:
@@ -1017,10 +1022,11 @@ SPEC CHECKSUMS:
   RNFBApp: 9c4eb84da8418346829c0d0220c4794d1de7b1f6
   RNFBAuth: 9a1a0e6fb9b3ccba2159a5f52a2891df437f0ce4
   RNFBFirestore: a24e976a7b143a4c367ab01cfefc0e99a6094a7d
+  RNI18n: e2f7e76389fcc6e84f2c8733ea89b92502351fd8
   RNScreens: 01ab149b5dd5c27f5ff26741b1d2bdf2cee1af35
   Yoga: 575c581c63e0d35c9a83f4b46d01d63abc1100ac
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: f452f766895e85efab8a1bb435e96caeaa10c10b
+PODFILE CHECKSUM: b7a16866d56c56f4af65cf44ad93348d830e55e5
 
 COCOAPODS: 1.10.1
