@@ -9,7 +9,9 @@ import colors from '../../../common/color';
 import { AuthConsumer } from '../../../boot/authProvider';
 import RNI18n,{tc} from "../../../localization"
 
-const LoginFormBody = () => {
+const LoginFormBody = (props:any) => {
+    const{handleSubmit} = props;
+    console.log('LOGIN PROPS',props)
     return (
         <View style={{ flex: 1 }}>
                     <View style={{ flex: 1 }}>
