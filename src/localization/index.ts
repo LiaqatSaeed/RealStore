@@ -15,6 +15,9 @@ interface Language {
 }
 
 export const tc = (key:string) => RNI18n.t(`common.${key}`);
+
+export const te = (key:string) => RNI18n.t(`error.${key}`);
+
 export const onChangeLocale = ({locale}:Language) => RNI18n.locale = locale;
 
 export default RNI18n;

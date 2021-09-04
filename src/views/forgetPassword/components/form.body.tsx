@@ -7,23 +7,25 @@ import FacebookLogin from '../../../integration/auth/facebook.login';
 import {Button, Label} from '../../../components';
 import colors from '../../../common/color';
 import {AuthConsumer} from '../../../boot/authProvider';
-import {HOME} from '../../../routing/constants';
 import RNI18n, {tc} from '../../../localization';
-import {SubmitButton} from '../../../components/button';
+import { SubmitButton } from '../../../components/button';
 
-const LoginFormBody = ({handleSubmit}: any) => {
+const ForgetPasswordFormBody = () => {
   return (
     <View style={{flex: 1}}>
       <View style={{flex: 1}}>
-        <Field name="email" keyboardType="email-address" autoCapitalize={false} label={tc('email')} component={Input} />
-        <Field name="password"  secureTextEntry label={tc('password')} component={Input} />
+        <Field name="email" label={tc('email')} component={Input} />
       </View>
       <FacebookLogin
         title={RNI18n.t('common.join_with', {media: 'Facebook'})}
         onSubmit={(values: any) => console.log(values)}
       />
-      <SubmitButton label="login" onPress={handleSubmit} />
+   
+      <SubmitButton
+                label="forgot_password"
+                onPress={() => { }}
+            />
     </View>
   );
 };
-export default withFormik(LoginFormBody);
+export default withFormik(ForgetPasswordFormBody);

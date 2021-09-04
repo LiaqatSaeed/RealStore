@@ -3,7 +3,7 @@ import {TextInput, Text, SafeAreaView} from 'react-native';
 import styled from 'styled-components';
 import colors from '../../common/color';
 import {FONT_FAMILY} from '../../styles';
-import {FieldProps} from 'formik';
+import {FieldProps, getIn} from 'formik';
 import ErrorMessage from "../error.message"
 
 interface InputProps {
@@ -11,6 +11,7 @@ interface InputProps {
   placeholder?: string;
   field?: any;
   form?: any;
+  id?:string
 }
 
 interface LabelProps {
@@ -40,16 +41,17 @@ export const Label = styled(Text)`
 
 const Input = ({
   label,
-  field: {name, onBlur, onChange, value},
-  form: {errors, touched, handleChange, handleBlur, setFieldTouched},
+  field: {name,  value},
+  form: {errors, touched,setFieldValue, handleChange, handleBlur, setFieldTouched},
   ...rest
 }: InputProps & FieldProps) => {
-  console.log('INPUT PROPS REST', rest);
+ 
+  const hasError = getIn(touched, name) && getIn(errors, name);
 
   return (
     <SafeAreaView>
       {label && <Label indent={true}>{label}</Label>}
-      <StyledInput {...rest} />
+      <StyledInput value={value} onBlur={handleBlur} onChangeText={(e)=> setFieldValue(name,e)} id={name} {...rest} />
       <ErrorMessage name={name} errors={errors} touched={touched}/>
     </SafeAreaView>
   );

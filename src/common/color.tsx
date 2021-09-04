@@ -9,6 +9,7 @@ const colors = {
     gray_DFE:"#DFE2E5",
     bg_E4E:"#E4E6E7",
     black:"#000000",
-    white:"#FFFFFF" 
+    white:"#FFFFFF" ,
+    errorRed:"#a72122"
 }
 export default colors;

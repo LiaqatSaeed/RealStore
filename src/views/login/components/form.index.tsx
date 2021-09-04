@@ -5,10 +5,10 @@ import initialValues from './initial.values';
 import ValidationSchema from './validation.schema';
 
 
-const LoginForm = () => {
+const LoginForm = ({onSubmit}:any) => {
   return (
     <View style={{ flex:6,justifyContent:"center" }}>
-      <LoginFormBody  onSubmit={()=>{}} initialValues={initialValues} validationSchema={ValidationSchema}/>
+      <LoginFormBody  onSubmit={onSubmit} initialValues={initialValues} validationSchema={ValidationSchema}/>
     </View>
   );
 }

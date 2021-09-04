@@ -17,5 +17,5 @@ export default {
     register:"Register",
     login_button:"{login} to my account",
     no_account:"Dont have an account"
-  },
+  }
 };
