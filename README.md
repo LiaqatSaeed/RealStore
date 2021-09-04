@@ -97,9 +97,10 @@ noImplicitAny: true
          }```
 - [x] Run `react-native` link command in the root project path.
 
-# Formik 
+# Formik & Yup
 - [x] Formik HOC created 
 - [x] Configure Yup validation
+- [x] Demo: https://www.loom.com/share/2fe2c4555fff4b6a9d787e3494399334 
 
 
 # Localization 
