@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import PublicStacks from './stacks/public';
+import PrivateStacks from './stacks/private';
 import TabsNavigator from './navigations/tabs';
 import StacksNavigator from './navigations/stack';
 import AuthStack from './stacks/public';
@@ -10,7 +11,7 @@ const Routing = () => (
   <NavigationContainer>
     <AuthConsumer>
       {({isLoggedIn}) =>
-        isLoggedIn ? <TabsNavigator pages={PublicStacks} /> : <AuthStack />
+        isLoggedIn ? <TabsNavigator pages={PrivateStacks} /> : <AuthStack />
       }
     </AuthConsumer>
   </NavigationContainer>

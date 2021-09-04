@@ -1,6 +1,11 @@
 import * as React from 'react';
-import Routing from "../routing"
+import Routing from '../routing';
+import AuthProvider from './authProvider';
 
 export default function App() {
-  return <Routing/>;
+  return (
+    <AuthProvider>
+      <Routing />
+    </AuthProvider>
+  );
 }
