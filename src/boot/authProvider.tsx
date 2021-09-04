@@ -1,16 +1,33 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import styles from '../styles';
-const { Provider, Consumer } = React.createContext({ isLoggedIn: false, theme: { active_color: "red" } ,styles});
+import {setData} from '../utils/helper';
+import {HOME} from '../routing/constants';
 
-const AuthProvider = ({ children }: any) => {
+const {Provider, Consumer} = React.createContext({
+  isLoggedIn: false,
+  loginHandler: (prop: any) => {},
+  theme: {active_color: 'red'},
+  styles,
+});
 
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
-    const [theme, setTheme] = useState({
-        active_color: "red"
-    })
+const AuthProvider = ({children, navigation}: any) => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [theme, setTheme] = useState({
+    active_color: 'red',
+  });
 
-    return <Provider value={{ isLoggedIn, theme ,styles}}>{children}</Provider>;
+  const loginHandler = ({values, navigation}: any): void => {
+   // setData(values);
+    setIsLoggedIn(true);
+    navigation.navigate(HOME);
+  };
+
+  return (
+    <Provider value={{loginHandler: loginHandler, isLoggedIn, theme, styles}}>
+      {children}
+    </Provider>
+  );
 };
-export { Consumer as AuthConsumer };
+export {Consumer as AuthConsumer};
 
 export default AuthProvider;

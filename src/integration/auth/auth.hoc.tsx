@@ -11,9 +11,11 @@ export function withAuth<P>(WrappedComponent: React.FC<P & BaseProps>) {
   const AuthBase = (props: P) => {
     const [user, setUser] = useState({});
 
-    const onLogin = ()=>{
-      
-    }
+    auth().onAuthStateChanged((user) => {
+      if(user) {
+        setUser(user);
+      }
+    })
 
     return <WrappedComponent {...props} auth={auth} user={user} />;
   };

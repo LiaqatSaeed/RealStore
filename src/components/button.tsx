@@ -3,6 +3,7 @@ import {TouchableOpacity, Text, Image} from 'react-native';
 import styled from 'styled-components';
 import {Label} from './index';
 import colors from '../common/color';
+import { tc } from '../localization';
 
 const primary = `border-radius:10px; height:35px; background-color:${colors.primary}; color:${colors.white};`;
 
@@ -12,7 +13,7 @@ interface ButtonProps {
 }
 
 interface GroupButtonProps {
-  url: string;
+  url?: string;
   label?: string;
   onPress?: any;
   css?: string;
@@ -66,5 +67,20 @@ export const GroupButton = ({
     </GroupButtonWrapper>
   );
 };
+
+export const SubmitButton = ({label, onPress}:GroupButtonProps)=>{
+  return (
+    <Button onPress={onPress} is_primary css={'margin-top:20px'}>
+    <Label
+      css={`
+        color: ${colors.white};
+        font-weight: bold;
+        font-size: 14px;
+      `}>
+      {tc(label)}
+    </Label>
+  </Button>
+  )
+}
 
 export default Button;
