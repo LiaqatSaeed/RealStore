@@ -12,6 +12,7 @@ interface InputProps {
   field?: any;
   form?: any;
   id?:string
+  invalid?:boolean 
 }
 
 interface LabelProps {
@@ -28,6 +29,7 @@ const StyledInput = styled(TextInput)`
   border: 1px solid ${colors.gray_DFE};
   margin-bottom: 5px;
   font-family: ${FONT_FAMILY};
+  ${({invalid}: InputProps) => invalid && `border-color:${colors.errorRed}`}
 `;
 
 export const Label = styled(Text)`
@@ -46,13 +48,13 @@ const Input = ({
   ...rest
 }: InputProps & FieldProps) => {
  
-  const hasError = getIn(touched, name) && getIn(errors, name);
+  const invalid = getIn(touched, name) && getIn(errors, name);
 
   return (
     <SafeAreaView>
       {label && <Label indent={true}>{label}</Label>}
-      <StyledInput value={value} onBlur={handleBlur} onChangeText={(e)=> setFieldValue(name,e)} id={name} {...rest} />
-      <ErrorMessage name={name} errors={errors} touched={touched}/>
+      <StyledInput invalid={invalid} value={value} onBlur={handleBlur} onChangeText={(e)=> setFieldValue(name,e)} id={name} {...rest} />
+     {invalid && <ErrorMessage name={name} errors={errors} touched={touched}/>} 
     </SafeAreaView>
   );
 };

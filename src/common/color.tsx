@@ -10,6 +10,8 @@ const colors = {
     bg_E4E:"#E4E6E7",
     black:"#000000",
     white:"#FFFFFF" ,
-    errorRed:"#a72122"
+    errorRed:"#a72122",
+    activeGreen:"#3EC032",
+    activeLightGreen:"#A9E88B"
 }
 export default colors;

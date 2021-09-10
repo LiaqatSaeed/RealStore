@@ -15,7 +15,6 @@ target 'RealStore' do
   pod 'RNI18n', :path => '../node_modules/react-native-i18n'
 
   pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-async-storage/async-storage'
-
   target 'RealStoreTests' do
     inherit! :complete
     # Pods for testing

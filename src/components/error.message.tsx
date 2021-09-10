@@ -7,7 +7,11 @@ import {getIn} from "formik"
 const Error = styled(Text)`
 font-size: 10px;
 color: ${colors.errorRed};
-padding-left: 20px;
+left: 13;
+padding:0px 5px;
+position: absolute;
+top: 30;
+background-color: ${colors.white};
 `
 
 interface ErrorMessageProps {
@@ -19,9 +23,8 @@ interface ErrorMessageProps {
 const ErrorMessage = ({ name, errors, touched }: ErrorMessageProps) => {
  
 const hasError = getIn(touched, name) && getIn(errors, name);
-    //onst hasError = errors[name] && touched[name];
     return hasError ? (
-        <Error >{getIn(errors, name)}</Error>
+        <Error >{getIn(errors, name )}</Error>
     ) : null;
 };
 
