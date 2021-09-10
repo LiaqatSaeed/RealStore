@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {Text, View, NativeModules} from 'react-native';
 import {AuthConsumer} from '../../boot/authProvider';
 import colors from '../../common/color';
 import {Button, Label} from '../../components';
@@ -7,6 +7,7 @@ import {REGISTER, FORGET_PASSWORD, HOME} from '../../routing/constants';
 import LoginForm from './components/form.index';
 import RNI18n, {tc} from '../../localization';
 import {setData} from '../../utils/helper';
+
 
 // import GoogleLogin from '../../integration/auth/google.login';
 
@@ -30,8 +31,7 @@ const LoginScreen = ({navigation}: LoginScreenProps) => {
             }}>
             <Text style={styles.h1}>{RNI18n.t('login.heading')}</Text>
             <Label>{RNI18n.t('login.description')}</Label>
-          </View>
-
+          </View>   
           <LoginForm
             onSubmit={(values: any) => loginHandler({values, navigation})}
           />

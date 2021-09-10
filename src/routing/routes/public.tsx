@@ -6,7 +6,7 @@ import { LOGIN, REGISTER, FORGET_PASSWORD, RESET_PASSWORD } from '../constants';
 
 const PublicScreens = [
   {
-    name: `${LOGIN}`,
+    name: LOGIN,
     component: LoginScreen,
     key: LOGIN,
     options: {headerShown: false},

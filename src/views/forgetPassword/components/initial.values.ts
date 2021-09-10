@@ -1,9 +1,9 @@
 export interface RegisterProps {
-    email: String,
-};
+  email: String;
+}
 
 const initialValues: RegisterProps = {
-    email: "",
-}
+  email: '',
+};
 
 export default initialValues;

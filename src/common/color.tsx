@@ -1,6 +1,3 @@
-import React from "react";
-
-
 const colors = {
     bg_F8F:"#F8FBFF",
     active:"#FE554A",
@@ -12,6 +9,8 @@ const colors = {
     white:"#FFFFFF" ,
     errorRed:"#a72122",
     activeGreen:"#3EC032",
-    activeLightGreen:"#A9E88B"
+    activeLightGreen:"#A9E88B",
+    transparent:"transparent",
+    graylight:"rgba(167, 179, 186, 0.1)"
 }
 export default colors;

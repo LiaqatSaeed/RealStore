@@ -25,6 +25,7 @@ export default {
     have_account:"Already Have an Account!",
     forgot_password:"Forgot Password?",
     required:"Required",
-    email_invalid:"Email Address is invalid."
+    email_invalid:"Email Address is invalid.",
+    other_account:"Try other Account!",
   },
 };

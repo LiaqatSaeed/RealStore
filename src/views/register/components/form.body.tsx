@@ -1,15 +1,13 @@
-import React from 'react';
 import { Field } from 'formik';
-import { Text, View } from 'react-native';
-import { withFormik } from '../../../components/form/form.hoc';
+import React from 'react';
+import { View } from 'react-native';
 import { Input } from '../../../components';
-import FacebookLogin from '../../../integration/auth/facebook.login';
 import { SubmitButton } from '../../../components/button';
-import colors from '../../../common/color';
-import { AuthConsumer } from '../../../boot/authProvider';
+import { withFormik } from '../../../components/form/form.hoc';
+import FacebookLogin from '../../../integration/auth/facebook.login';
 import RNI18n, { tc } from '../../../localization';
 
-const LoginFormBody = ({}) => {
+const LoginFormBody = ({ }) => {
     return (
         <View style={{ flex: 1 }}>
             <View style={{ flex: 1 }}>
@@ -17,7 +15,7 @@ const LoginFormBody = ({}) => {
                 <Field name="password" label={tc('password')} component={Input} />
                 <Field
                     name="confirm_password"
-                    label="Confirm Password"
+                    label={tc("confirm_password")}
                     component={Input}
                 />
             </View>

@@ -4,7 +4,7 @@ import HomeDetailsScreen from '../../views/homeDetails';
 import SettingsDetailsScreen from '../../views/settingDetails';
 import {HOME, SETTINGS} from '../constants';
 
-const PublicScreens = [
+const PrivateScreens = [
   {
     name: `${HOME}`,
     component: HomeScreen,
@@ -27,4 +27,4 @@ const PublicScreens = [
   },
 ];
 
-export default PublicScreens;
+export default PrivateScreens;

@@ -1,11 +1,11 @@
 import React from 'react';
-import {Text, View} from 'react-native';
-import {AuthConsumer} from '../../boot/authProvider';
+import { Text, View } from 'react-native';
+import { AuthConsumer } from '../../boot/authProvider';
 import colors from '../../common/color';
-import {Button, Label} from '../../components';
-import {LOGIN} from '../../routing/constants';
+import { Button, Label } from '../../components';
+import RNI18n, { tc } from '../../localization';
+import { LOGIN } from '../../routing/constants';
 import RegisterForm from './components/form.index';
-import RNI18n from '../../localization';
 
 // import GoogleRegister from '../../integration/auth/google.Register';
 
@@ -15,11 +15,11 @@ interface RegisterScreenProps {
   auth?: any;
 }
 
-const RegisterScreen = ({navigation}: RegisterScreenProps) => {
+const RegisterScreen = ({ navigation }: RegisterScreenProps) => {
   return (
     <AuthConsumer>
-      {({styles}) => (
-        <View style={{flex: 1, padding: 10, backgroundColor: colors.bg_F8F}}>
+      {({ styles }) => (
+        <View style={{ flex: 1, padding: 10, backgroundColor: colors.bg_F8F }}>
           <View
             style={{
               flex: 2,
@@ -32,13 +32,13 @@ const RegisterScreen = ({navigation}: RegisterScreenProps) => {
           </View>
 
           <RegisterForm />
-          <View style={{flex: 1, padding: 10, justifyContent: 'center'}}>
-            <View style={{alignSelf: 'center', flexDirection: 'row'}}>
+          <View style={{ flex: 1, padding: 10, justifyContent: 'center' }}>
+            <View style={{ alignSelf: 'center', flexDirection: 'row' }}>
               <Label
                 css={`
                   font-size: 14px;
                 `}>
-                Already Have an Account!
+                {tc("have_account")}
               </Label>
               <Button onPress={() => navigation.navigate(LOGIN)}>
                 <Label
@@ -48,7 +48,7 @@ const RegisterScreen = ({navigation}: RegisterScreenProps) => {
                     font-weight: bold;
                   `}>
                   {' '}
-                  Sign In
+                  {tc("login")}
                 </Label>
               </Button>
             </View>

@@ -1,11 +1,13 @@
 import RNI18n from 'react-native-i18n';
 import en from "./locales/en-US";
-import fr from "./locales/fr-CA"
+import fr from "./locales/fr-CA";
+import de from "./locales/de"
 
 RNI18n.fallbacks = true;
 RNI18n.translations ={
 en,
-fr
+fr,
+de
 }
 RNI18n.defaultLocale = 'en';
 
