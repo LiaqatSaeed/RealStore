@@ -108,3 +108,4 @@ noImplicitAny: true
 - [x] `yarn add react-native-i18n`
 - [x] `fr` & `en` locales enabled for `French` & `English` language
 - [x] Common implementation for fi keys also implemented
+- [x] Demo: https://www.loom.com/share/25ccb22a75e64ef5a8e720fb4d22f981 
